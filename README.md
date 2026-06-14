@@ -13,7 +13,6 @@ perplexity) and the Task 2c GPU bonus. The format runs on **CPU and GPU**.
 1. Read `SUMMARY.md` (one page: what was done, key findings, results).
 2. Open `demo/key_results.md` — every claimed number with the exact log line
    that proves it (file sizes, speeds, perplexity, KV-cache memory, GPU output).
-3. Watch `demo/screen_recording.mp4` (~4 min) to see each task run live.
 
 ## If you want to build and check the code
 
@@ -51,9 +50,7 @@ Paths are auto-detected but configurable via env vars at the top of the script
 │   ├── task2/                  README + IMPLEMENTATION_NOTES + scripts/ + logs/
 │   └── task3/                  README + scripts/ + logs/
 └── demo/                       proof-at-a-glance
-    ├── key_results.md          all numbers + the log lines that prove them
-    ├── screen_recording.mp4    live run of every task
-    └── screenshots/            terminal captures per task
+    └── key_results.md          every number + the log line that proves it
 ```
 
 ## One-line status per task
