@@ -23,19 +23,6 @@ perplexity) and the Task 2c GPU bonus. The format runs on **CPU and GPU**.
 
 ---
 
-## Automated verification
-
-Run the included script to check everything at once — it applies the patch,
-builds, runs each task, and prints PASS/FAIL against the expected numbers:
-
-```bash
-./verify.sh                      # full: build + all tasks
-./verify.sh --no-build           # skip build (use an already-built tree)
-./verify.sh --skip-task3         # skip the multimodal test (no VLM needed)
-```
-
-Paths are auto-detected but configurable via env vars at the top of the script
-(`REPO`, `GGUF`, `PATCH`). For manual reproduction of any single result, see `SETUP.md`.
 
 ## Folder map
 
