@@ -1,0 +1,26 @@
+0.00.025.504 I common_init_result: fitting params to device memory ...
+0.00.025.506 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.201.682 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.909.416 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.01.042.987 I mtmd_cli_context: chat template example:
+<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+
+0.01.044.676 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.01.044.678 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.01.044.678 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.01.044.834 W load_tensors: ffn up/down are swapped
+0.01.677.913 I main: loading model: /Users/shivangi/qvac/gguf/vlm/Qwen2-VL-2B-Instruct-Q4_K_M.gguf
+0.01.677.919 W WARN: This is an experimental CLI for testing multimodal capability.
+0.01.677.919 W       For normal use cases, please use the standard llama-cli
+
+The image shows a newspaper clipping from The New York Times, dated July 21, 1969. The headline reads, "Men Walk on Moon, Astronauts Land on Plain
+

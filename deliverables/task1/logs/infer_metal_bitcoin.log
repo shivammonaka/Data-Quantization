@@ -1,0 +1,88 @@
+0.00.064.007 I srv    load_model: loading model '/Users/shivangi/qvac/gguf/llama-3.2-3b-q4_0.gguf'
+0.00.064.037 I common_init_result: fitting params to device memory ...
+0.00.064.037 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.401.218 W llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+0.00.428.343 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.00.482.887 I srv    load_model: initializing slots, n_slots = 1
+0.00.528.178 W common_speculative_init: no implementations specified for speculative decoding
+0.00.528.183 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.00.528.224 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.00.528.225 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.00.528.225 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.00.528.226 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.00.528.242 I srv          init: idle slots will be saved to prompt cache upon starting a new task
+0.00.531.609 I init: chat template, example_format: '<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+Today Date: 12 Jun 2026
+
+You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Hello<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Hi there<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+How are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+'
+0.00.533.460 I srv          init: init: chat template, thinking = 0
+0.00.533.481 I srv  update_slots: all slots are idle
+0.00.535.450 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.00.535.451 I srv  get_availabl: updating prompt cache
+0.00.535.453 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.00.535.454 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+0.00.535.454 I srv  get_availabl: prompt cache update took 0.00 ms
+0.00.535.461 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9614-ebc10770a
+model      : llama-3.2-3b-q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> What is bitcoin?
+
+Bitcoin is a digital or virtual currency that uses cryptography for security and is decentralized, meaning it's not controlled by any government or financial institution. It was created in 2009 by an individual or group of individuals using the pseudonym Satoshi Nakamoto.
+
+Here's a brief overview of how bitcoin works:
+
+**Key characteristics:**
+
+1. **Decentralized**: Bitcoin is not issued or controlled by any central authority, such as a government or bank.
+2. **Digital**: Bitcoin exists only in digital0.02.748.411 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =  48.46 t/s
+ form, and transactions are recorded on a public ledger called the blockchain.
+3. **Limited supply**: The total supply of bitcoin is capped at 21 million, and new coins are created through a process called mining.
+4. **Cryptographic**: Bitcoin transactions are secured through cryptography, which ensures the integrity of the transactions and the ownership of the coins.
+
+**How it works:**
+
+1. **Mining**: New bitcoin coins are created through a process called mining, which involves solving complex mathematical problems. Min0.04.823.105 I slot print_timing: id  0 | task 0 | prompt eval time =     149.59 ms /    39 tokens (    3.84 ms per token,   260.72 tokens per second)
+0.04.823.108 I slot print_timing: id  0 | task 0 |        eval time =    4138.05 ms /   200 tokens (   20.69 ms per token,    48.33 tokens per second)
+0.04.823.108 I slot print_timing: id  0 | task 0 |       total time =    4287.64 ms /   239 tokens
+0.04.823.108 I slot print_timing: id  0 | task 0 |    graphs reused =        199
+0.04.823.125 I slot      release: id  0 | task 0 | stop processing: n_tokens = 238, truncated = 0
+0.04.823.127 I srv  update_slots: all slots are idle
+
+
+[ Prompt: 260.7 t/s | Generation: 48.3 t/s ]
+
+Exiting...
+EXIT_CODE: 0
+PEAK_RSS_MB: 2389

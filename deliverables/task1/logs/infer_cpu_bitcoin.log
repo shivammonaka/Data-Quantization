@@ -1,0 +1,88 @@
+0.00.031.736 I srv    load_model: loading model '/Users/shivangi/qvac/gguf/llama-3.2-3b-q4_0.gguf'
+0.00.031.902 I common_init_result: fitting params to device memory ...
+0.00.031.903 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.599.337 W llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+0.00.622.403 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.00.692.640 I srv    load_model: initializing slots, n_slots = 1
+0.00.738.641 W common_speculative_init: no implementations specified for speculative decoding
+0.00.738.647 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.00.738.678 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.00.738.678 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.00.738.678 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.00.738.679 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.00.738.694 I srv          init: idle slots will be saved to prompt cache upon starting a new task
+0.00.741.754 I init: chat template, example_format: '<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+Today Date: 12 Jun 2026
+
+You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Hello<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Hi there<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+How are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+'
+0.00.743.268 I srv          init: init: chat template, thinking = 0
+0.00.743.289 I srv  update_slots: all slots are idle
+0.00.744.921 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.00.744.922 I srv  get_availabl: updating prompt cache
+0.00.744.924 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.00.744.925 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+0.00.744.926 I srv  get_availabl: prompt cache update took 0.00 ms
+0.00.744.932 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9614-ebc10770a
+model      : llama-3.2-3b-q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> What is bitcoin?
+
+Bitcoin is a digital or virtual currency that uses cryptography for security and is decentralized, meaning it's not controlled by any government or financial institution. It was created in 2009 by an individual or group of individuals using the pseudonym Satoshi Nakamoto.
+
+Here's a brief overview of how bitcoin works:
+
+**Key characteristics:**
+
+1. **Decentralized**: Bitcoin is not issued or backed by any government or financial institution. Transactions are recorded on a public ledger called the blockchain, which is maintained by0.03.655.501 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =  37.10 t/s
+ a network of computers around the world.
+2. **Digital**: Bitcoin exists only in electronic form, and transactions are made through digital wallets or exchanges.
+3. **Limited supply**: The total supply of bitcoin is capped at 21 million, making it a scarce asset.
+4. **Cryptography**: Bitcoin transactions are secured through cryptography, which ensures that the transfer of funds is secure and irreversible.
+
+**How it works:**
+
+1. **Mining**: New bitcoin is created through a process called mining0.06.430.667 I slot print_timing: id  0 | task 0 | prompt eval time =     214.93 ms /    39 tokens (    5.51 ms per token,   181.45 tokens per second)
+0.06.430.669 I slot print_timing: id  0 | task 0 |        eval time =    5470.79 ms /   200 tokens (   27.35 ms per token,    36.56 tokens per second)
+0.06.430.671 I slot print_timing: id  0 | task 0 |       total time =    5685.72 ms /   239 tokens
+0.06.430.671 I slot print_timing: id  0 | task 0 |    graphs reused =        199
+0.06.430.693 I slot      release: id  0 | task 0 | stop processing: n_tokens = 238, truncated = 0
+0.06.430.695 I srv  update_slots: all slots are idle
+,
+
+[ Prompt: 181.5 t/s | Generation: 36.6 t/s ]
+
+Exiting...
+EXIT_CODE: 0
+PEAK_RSS_MB: 4196

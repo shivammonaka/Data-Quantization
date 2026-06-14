@@ -1,0 +1,7 @@
+*.gguf
+*.zip
+build/
+venv/
+__MACOSX/
+.DS_Store
+*.o

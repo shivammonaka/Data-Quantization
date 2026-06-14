@@ -1,0 +1,74 @@
+0.00.054.788 I srv    load_model: loading model '/Users/shivangi/qvac/gguf/llama-3.2-3b-q4_0.gguf'
+0.00.054.847 I common_init_result: fitting params to device memory ...
+0.00.054.848 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.988.113 W llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+0.02.211.497 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.02.379.793 I srv    load_model: initializing slots, n_slots = 1
+0.02.427.143 W common_speculative_init: no implementations specified for speculative decoding
+0.02.427.165 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.02.427.208 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.02.427.208 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.02.427.209 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.02.427.209 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.02.427.267 I srv          init: idle slots will be saved to prompt cache upon starting a new task
+0.02.431.218 I init: chat template, example_format: '<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+Today Date: 13 Jun 2026
+
+You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Hello<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Hi there<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+How are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+'
+0.02.432.821 I srv          init: init: chat template, thinking = 0
+0.02.432.855 I srv  update_slots: all slots are idle
+0.02.434.653 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.02.434.654 I srv  get_availabl: updating prompt cache
+0.02.434.656 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.02.434.657 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+0.02.434.657 I srv  get_availabl: prompt cache update took 0.00 ms
+0.02.434.664 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9614-ebc10770a
+model      : llama-3.2-3b-q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> What is bitcoin?
+
+Bitcoin is a digital or virtual currency that uses cryptography for security and is decentralized, meaning it's not controlled by any government or financial institution. It was created in 2009 by an individual or group of individuals using the pseudonym Satoshi Nakamoto.
+
+Bitcoin is based on a peer-to-peer network, where transactions are recorded on a public ledger called the blockchain. The blockchain is a decentralized, digital0.04.833.726 I slot print_timing: id  0 | task 0 | prompt eval time =     236.76 ms /    39 tokens (    6.07 ms per token,   164.72 tokens per second)
+0.04.833.728 I slot print_timing: id  0 | task 0 |        eval time =    2162.29 ms /    80 tokens (   27.03 ms per token,    37.00 tokens per second)
+0.04.833.729 I slot print_timing: id  0 | task 0 |       total time =    2399.05 ms /   119 tokens
+0.04.833.729  recordI slot print_timing: id  0 | task 0 |    graphs reused =         79
+0.04.833.746 I slot      release: id  0 | task 0 | stop processing: n_tokens = 118, truncated = 0
+0.04.833.749 I srv  update_slots: all slots are idle
+
+
+[ Prompt: 164.7 t/s | Generation: 37.0 t/s ]
+
+Exiting...

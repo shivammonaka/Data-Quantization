@@ -1,0 +1,74 @@
+0.00.046.859 I srv    load_model: loading model '/Users/shivangi/qvac/gguf/llama-3.2-3b-q4hqq.gguf'
+0.00.046.920 I common_init_result: fitting params to device memory ...
+0.00.046.921 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.426.670 W llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+0.01.492.238 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.01.587.819 I srv    load_model: initializing slots, n_slots = 1
+0.01.646.419 W common_speculative_init: no implementations specified for speculative decoding
+0.01.646.440 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.01.646.478 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.01.646.479 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.01.646.479 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.01.646.479 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.01.646.519 I srv          init: idle slots will be saved to prompt cache upon starting a new task
+0.01.651.232 I init: chat template, example_format: '<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+Today Date: 13 Jun 2026
+
+You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Hello<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Hi there<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+How are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+'
+0.01.652.997 I srv          init: init: chat template, thinking = 0
+0.01.653.031 I srv  update_slots: all slots are idle
+0.01.654.890 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.01.654.891 I srv  get_availabl: updating prompt cache
+0.01.654.893 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.01.654.894 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+0.01.654.894 I srv  get_availabl: prompt cache update took 0.00 ms
+0.01.654.900 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9614-ebc10770a
+model      : llama-3.2-3b-q4hqq.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> What is bitcoin?
+
+Bitcoin is a decentralized digital currency that uses cryptography to secure and verify transactions. It was created in 2009 by an anonymous individual or group using the pseudonym Satoshi Nakamoto. Bitcoin operates on a peer-to-peer network, meaning that it is not controlled by any government, institution, or company.
+
+0.04.134.802 I slot print_timing: id  0 | task 0 | prompt eval time =     634.69 ms /    39 tokens (   16.27 ms per token,    61.45 tokens per second)
+0.04.134.805 I slot print_timing: id  0 | task 0 |        eval time =    1845.20 ms /    60 tokens (   30.75 ms per token,    32.52 tokens per second)
+0.04.134.805 I slot print_timing: id  0 | task 0 |       total time =    2479.89 ms /    99 tokens
+0.04.134.806 I slot print_timing: id  0 | task 0 |    graphs reused =         59
+0.04.134.823 I slot      release: id  0 | task 0 | stop processing: n_tokens = 98, truncated = 0
+0.04.134.826 I srv  update_slots: all slots are idle
+
+
+[ Prompt: 61.4 t/s | Generation: 32.5 t/s ]
+
+Exiting...

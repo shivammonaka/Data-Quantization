@@ -1,0 +1,105 @@
+0.00.044.999 I srv    load_model: loading model '/Users/shivangi/qvac/gguf/llama-3.2-3b-q4_0.gguf'
+0.00.045.024 I common_init_result: fitting params to device memory ...
+0.00.045.025 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.737.704 W llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+0.00.758.843 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.00.805.682 I srv    load_model: initializing slots, n_slots = 1
+0.00.853.221 W common_speculative_init: no implementations specified for speculative decoding
+0.00.853.228 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.00.853.259 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.00.853.259 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.00.853.260 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.00.853.260 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.00.853.269 I srv          init: idle slots will be saved to prompt cache upon starting a new task
+0.00.856.247 I init: chat template, example_format: '<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+Today Date: 12 Jun 2026
+
+You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Hello<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Hi there<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+How are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+'
+0.00.857.866 I srv          init: init: chat template, thinking = 0
+0.00.857.888 I srv  update_slots: all slots are idle
+0.00.859.548 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.00.859.549 I srv  get_availabl: updating prompt cache
+0.00.859.551 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.00.859.552 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+0.00.859.553 I srv  get_availabl: prompt cache update took 0.00 ms
+0.00.859.560 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9614-ebc10770a
+model      : llama-3.2-3b-q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Write a Python function to reverse a list.
+
+**Reversing a List in Python**
+================================
+
+You can use the built-in `reverse()` method in Python to reverse a list. Here's a simple function that does that:
+
+```python
+def reverse_list(input_list):
+    """
+    Reverses a given list.
+
+    Args:
+        input_list (list): The list to be reversed.
+
+    Returns:
+        list: The reversed list.
+    """
+    input_list.reverse()
+    return input_list
+
+# Example usage:
+my_list0.03.791.584 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =  36.94 t/s
+ = [1, 2, 3, 4, 5]
+print("Original List:", my_list)
+print("Reversed List:", reverse_list(my_list))
+```
+
+This function takes a list as an argument, reverses it using the `reverse()` method, and returns the reversed list.
+
+Note: The `reverse()` method modifies the original list. If you want to keep the original list unchanged, you can create a copy of the list before reversing it:
+
+```python
+def0.06.569.049 I slot print_timing: id  0 | task 0 | prompt eval time =     225.05 ms /    44 tokens (    5.11 ms per token,   195.51 tokens per second)
+0.06.569.053 I slot print_timing: id  0 | task 0 |        eval time =    5484.43 ms /   200 tokens (   27.42 ms per token,    36.47 tokens per second)
+0.06.569.053 I slot print_timing: id  0 | task 0 |       total time =    5709.48 ms /   244 tokens
+0.06.569.054 I slot print_timing: id  0 | task 0 |    graphs reused =        199
+0.06.569.064 I slot      release: id  0 | task 0 | stop processing: n_tokens = 243, truncated = 0
+0.06.569.068 I srv  update_slots: all slots are idle
+ reverse
+
+[ Prompt: 195.5 t/s | Generation: 36.5 t/s ]
+
+Exiting...
+EXIT_CODE: 0
+PEAK_RSS_MB: 4197
